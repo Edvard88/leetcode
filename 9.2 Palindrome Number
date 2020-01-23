@@ -1,0 +1,15 @@
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
+        if x<0: return False
+        digitals = []
+        while x!=0:
+            digitals.append(x%10)
+            x = x//10
+        
+        reverse_digitals = digitals.copy()
+        reverse_digitals.reverse()
+        
+        if digitals == reverse_digitals:
+            return True
+        else:
+            return False
