@@ -1,0 +1,21 @@
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
+        if x<0: return False
+        digitals = []
+        while x!=0:
+            digitals.append(x%10)
+            x = x//10
+        
+        left_index = 0
+        right_index = len(digitals)-1
+        
+        
+
+        while (left_index<=right_index):
+            if digitals[left_index]!=digitals[right_index]: 
+                return False
+            else:                        
+                left_index+=1
+                right_index-=1
+        return True    
+        
