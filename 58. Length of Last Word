@@ -1,0 +1,10 @@
+class Solution:
+    def lengthOfLastWord(self, s: str) -> int:
+        reverseListOfWorlds = s.split(" ")[::-1]
+        
+        for world in reverseListOfWorlds:
+            if world != '':
+                return len(world)
+            else: 
+                continue
+        return 0   
