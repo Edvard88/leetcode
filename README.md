@@ -1,2 +1,2 @@
-# leetcode
-leetcode solutions
+# leetcode_collaboration
+Collaboration in leetcode
